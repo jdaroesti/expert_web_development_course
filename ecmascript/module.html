@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      function User() {
+        let username, password;
+
+        function doLogin(u, p) {
+          username = u;
+          password = p;
+          console.log(username, password);
+        }
+
+        return {
+          login: doLogin,
+        };
+      }
+
+      const user = User();
+      user.login('james', 'joyce');
+    </script>
+  </head>
+</html>
