@@ -5,23 +5,22 @@ on August 2017.
 
 # Syllabus
 
-
 1. Ecmascript
-  1. Basics
-  2. Values and Types
-  3. Operators
-Variables
-Comments
-Control statements
-Conditionals
-Loops
-Switch
-Falsy and Truthy statements
-Strict mode
-Functions
-this identifier
-Prototypes
-Polyfilling and transpiling
+    1. Basics
+        1. Values and Types
+        1. Operators
+        1. Variables
+        1. Comments
+        1. Control statements
+             1. Conditionals
+             1. Loops
+             1. Switch
+             1. Falsy and Truthy statements
+        1. Strict mode
+        1. Functions
+        1. this identifier
+        1. Prototypes
+        1. Polyfilling and transpiling
 Scope and closures
 What is a scope?
 Lexical scope
