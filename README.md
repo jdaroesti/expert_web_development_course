@@ -21,13 +21,13 @@ on August 2017.
         1. this identifier
         1. Prototypes
         1. Polyfilling and transpiling
-Scope and closures
-What is a scope?
-Lexical scope
-Function scope vs. block scope
-Hoisting
-Scope closure
-This and object prototypes
+    1. Scope and closures
+        1. What is a scope?
+        1. Lexical scope
+        1. Function scope vs. block scope
+        1. Hoisting
+        1. Scope closure
+    1. This and object prototypes
 What is this?
 How this is assigned
 Binding exceptions
@@ -212,13 +212,18 @@ HTTP triggers
 pub/sub triggers
 App example
 
+# Slides
 
-Literature
-Biedelman, Eric. What is shadow DOM?. https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
-ES6 Language Specification. http://www.ecma-international.org/ecma-262/6.0/
-Mozilla Developer Network. https://developer.mozilla.org
-MVCSS. http://mvcss.io/
-Polymer Project. https://www.polymer-project.org
-Simpson, Kyle. You don’t know JS. O’Reilly Media. 2015.
-Web APIs list. https://developer.mozilla.org/en-US/docs/Web/API
-Zachas, Nicholas. Understanding ECMAscript 6. No starch press. 2016.
+https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70eqU/edit?usp=sharing
+
+# Literature
+
+* Biedelman, Eric. What is shadow DOM?.
+* https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
+* ES6 Language Specification. http://www.ecma-international.org/ecma-262/6.0/
+* Mozilla Developer Network. https://developer.mozilla.org
+* MVCSS. http://mvcss.io/
+* Polymer Project. https://www.polymer-project.org
+* Simpson, Kyle. You don’t know JS. O’Reilly Media. 2015.
+* Web APIs list. https://developer.mozilla.org/en-US/docs/Web/API
+* Zachas, Nicholas. Understanding ECMAscript 6. No starch press. 2016.

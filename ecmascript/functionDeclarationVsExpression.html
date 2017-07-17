@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      // function declaration
+      var a = 2;
+
+      function foo() { // <-- insert this
+        var a = 3;
+        console.log( a ); // 3
+      } // <-- and this foo(); // <-- and this
+
+      foo();
+      console.log( a ); // 2
+
+      // function expression
+      var a = 2;
+
+      (function foo() { // <-- insert this
+        var a = 3;
+        console.log( a ); // 3
+      })(); // <-- and this
+
+      console.log( a ); // 2
+    </script>
+  </head>
+</html>
