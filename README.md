@@ -1,4 +1,4 @@
-# expert_web_development_course
+# Expert web development course
 
 A course I gave for advanced web developers in Mexico City. The course took place
 on August 2017.
@@ -28,16 +28,16 @@ on August 2017.
         1. Hoisting
         1. Scope closure
     1. This and object prototypes
-What is this?
-How this is assigned
-Binding exceptions
-Lexical this
-Built in objects
-Prototypes
-Prototypical inheritance
-Behavior delegation
-Block bindings
-Strings and regular expressions
+        1. What is this?
+        1. How this is assigned
+        1. Binding exceptions
+        1. Lexical this
+        1. Built in objects
+        1. Prototypes
+        1. Prototypical inheritance
+        1. Behavior delegation
+    1. Block bindings
+    1. Strings and regular expressions
 Functions
 Default parameters
 Arrow functions

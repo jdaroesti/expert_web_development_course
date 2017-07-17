@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      function foo() {
+        var a = 2;
+        function bar() {
+          console.log(a); // 2
+      }
+
+      bar();
+    }
+
+    foo();
+    </script>
+
+    <script>
+      'use strict';
+
+      function foo() {
+        var a = 2;
+
+        function bar() {
+          console.log(a);
+        }
+
+        return bar;
+      }
+
+      var baz = foo();
+
+      baz(); // 2 -- Whoa, closure was just observed, man.
+    </script>
+
+    <script>
+      'use strict';
+
+      function foo() {
+        var a = 2;
+
+        function baz() {
+          console.log(a); // 2
+        }
+
+        bar(baz);
+      }
+
+      function bar(fn) {
+        fn(); // look ma, I saw closure!
+      }
+    </script>
+
+    <script>
+      'use strict';
+
+      function CoolModule() {
+        var something = "cool";
+        var another = [1, 2, 3];
+
+        function doSomething() {
+          console.log( something );
+        }
+
+        function doAnother() {
+          console.log( another.join( " ! " ) );
+        }
+
+        return {
+          doSomething: doSomething,
+          doAnother: doAnother,
+        };
+      }
+
+      var foo = CoolModule();
+      foo.doSomething(); // cool
+      foo.doAnother(); // 1 ! 2 ! 3
+    </script>
+  </head>
+</html>

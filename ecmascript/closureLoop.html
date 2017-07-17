@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      for(var i = 1; i <= 5; i++) {
+        setTimeout(function timer() {
+            console.log(i);
+        }, i * 1000);
+      }
+    </script>
+
+    <script>
+      'use strict';
+
+      for(var i = 1; i <= 5; i++) {
+        (function(j) {
+          setTimeout(function timer(){
+            console.log(j);
+          }, j*1000 );
+        })(i);
+      }
+    </script>
+
+    <script>
+      'use strict';
+      
+      for(let i = 1; i <= 5; i++) {
+        setTimeout(function timer() {
+          console.log(i);
+        }, i * 1000);
+      }
+    </script>
+  </head>
+</html>
