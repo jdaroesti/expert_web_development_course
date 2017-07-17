@@ -2,9 +2,9 @@
 <html>
   <head>
     <script>
-    
+
       function foo() {
-        console.log( this.bar );
+        console.log(this.bar);
       }
 
       var bar = "global";
@@ -20,7 +20,7 @@
 
       foo(); // "global"
       obj1.foo(); // obj1
-      foo.call( obj2 ); // obj2
+      foo.call(obj2); // obj2
       new foo(); // undefined
     </script>
   </head>
