@@ -39,7 +39,7 @@ on August 2017.
         1. Behavior delegation
     1. Block bindings
     1. Strings and regular expressions
-    1. Functions
+    1. ES6 functions
         1. Default parameters
         1. Arrow functions
     1. ES6 Object functionality
@@ -50,10 +50,10 @@ on August 2017.
         1. Set and Weakset
         1. Map and Weakmap
     1. Iterators and generators
-    1. Classes
-    1. Arrays
+    1. ES6 Classes
+    1. ES6 Arrays
     1. Promises and asynchronous programming
-    1. Modules
+    1. ES6 Modules
 1. Browser
     1. Critical rendering path
         1. DOM
@@ -124,94 +124,94 @@ on August 2017.
         1. Render
         1. Precache
         1. Lazy load
-1. Accessibility
-1. Focus and tabs
-1. Semantic markup
-1. Screen readers
-1. WAI-ARIA
-1. WCAG2
-1. MVCSS
-1. Styleguide
-1. Reset
-1. Helpers
-1. Config / Theme
-1. Base
-1. Tools
-1. Presentation, logic and data components
-1. Redux
-1. Three principles
-1. Actions
-1. Reducers
-1. Store
-1. Data flow
-1. Async actions
-1. Middleware
-1. PolymerRedux
-1. Analytics
-1. Google Analytics
-1. Custom events
-1. Custom dimensions
-1. Custom metrics
-1. Offline Analytics
-1. Performance
-1. RAIL
+    1. Accessibility
+        1. Focus and tabs
+        1. Semantic markup
+        1. Screen readers
+        1. WAI-ARIA
+        1. WCAG2
+    1. MVCSS
+        1. Styleguide
+        1. Reset
+        1. Helpers
+        1. Config / Theme
+        1. Base
+        1. Tools
+    1. Presentation, logic and data components
+    1. Redux
+        1. Three principles
+        1. Actions
+        1. Reducers
+        1. Store
+        1. Data flow
+        1. Async actions
+        1. Middleware
+        1. PolymerRedux
+    1. Analytics
+        1. Google Analytics
+        1. Custom events
+        1. Custom dimensions
+        1. Custom metrics
+        1. Offline Analytics
+    1. Performance
+        1. RAIL
 1. Progressive webapps
-1. HTTPS
-1. TLS
-1. Certificates
-1. HTTP/2
-1. Server push
-1. Multiplex
-1. Header compression
-1. Service workers
-1. Life cycle
-1. Offline models (runtime caching)
-1. sw-precache
-1. sw-toolbox
-1. Webapp manifest
-1. Webapp manifest specification
-1. Start URL
-1. Custom icons
-1. Splash screen
-1. Launch style
-1. Theme color
-1. Push notifications
-1. How push works
-1. Subscribing a user
-1. Web push protocol
-1. Handling push events
-1. Common notification patterns
+    1. HTTPS
+        1. TLS
+        1. Certificates
+    1. HTTP/2
+        1. Server push
+        1. Multiplex
+        1. Header compression
+    1. Service workers
+        1. Life cycle
+        1. Offline models (runtime caching)
+        1. sw-precache
+        1. sw-toolbox
+    1. Webapp manifest
+        1. Webapp manifest specification
+        1. Start URL
+        1. Custom icons
+        1. Splash screen
+        1. Launch style
+        1. Theme color
+    1. Push notifications
+        1. How push works
+        1. Subscribing a user
+        1. Web push protocol
+        1. Handling push events
+        1. Common notification patterns
 1. Backend services
-1. Registrar
-1. DNS
-1. Firebase hosting
-1. Deploy
-1. Custom domains
-1. Hosting customization
-1. Firebase real time database
-1. Structure data
-1. Read / Write
-1. Database security rules
-1. Firebase Authentication
-1. Google auth
-1. Custom auth
-1. Anonymous auth
-1. User management
-1. Firebase Storage
-1. Upload, download and delete files
-1. Storage security rules
-1. PolymerFire
-1. firebase-app
-1. firebase-auth
-1. firebase-document
-1. firebase-query
-1. Cloud functions for firebase
-1. Database triggers
-1. Auth triggers
-1. Analytics triggers
-1. Storage triggers
-1. HTTP triggers
-1. pub/sub triggers
+    1. Registrar
+    1. DNS
+    1. Firebase hosting
+        1. Deploy
+        1. Custom domains
+        1. Hosting customization
+    1. Firebase real time database
+        1. Structure data
+        1. Read / Write
+        1. Database security rules
+    1. Firebase Authentication
+        1. Google auth
+        1. Custom auth
+        1. Anonymous auth
+        1. User management
+    1. Firebase Storage
+        1. Upload, download and delete files
+        1. Storage security rules
+    1. PolymerFire
+        1. firebase-app
+        1. firebase-auth
+        1. firebase-document
+        1. firebase-query
+    1. Cloud functions for firebase
+        1. Database triggers
+        1. Auth triggers
+        1. Analytics triggers
+        1. Storage triggers
+        1. HTTP triggers
+        1. pub/sub triggers
 1. Final project
     1. Trip advisor clone
     1. Instagram clone
