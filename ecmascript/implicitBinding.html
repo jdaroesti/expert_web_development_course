@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+      // Initial example
+
+      function foo() {
+        console.log( this.a );
+      }
+
+      var obj = {
+        a: 2,
+        foo: foo,
+      };
+
+      obj.foo(); // 2
+    </script>
+    <script>
+      'use strict';
+      // How the function call matters.
+
+      function foo() {
+        console.log( this.a );
+      }
+
+      var obj2 = {
+        a: 42,
+        foo: foo,
+      };
+
+      var obj1 = {
+        a: 2,
+        obj2: obj2,
+      };
+
+      obj1.obj2.foo(); // 42
+    </script>
+    <script>
+      // Object reference is lost
+
+      
+      function foo() {
+        console.log( this.a );
+      }
+
+      function doFoo(fn) {
+        // `fn` is just another reference to `foo`
+        fn(); // <-- call-site!
+      }
+
+      var obj={
+        a: 2,
+        foo: foo,
+      };
+
+      var a = "oops, global"; // `a` also property on global object
+      doFoo(obj.foo); // "oops, global"
+    </script>
+  </head>
+</html>

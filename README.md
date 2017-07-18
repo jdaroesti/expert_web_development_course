@@ -91,7 +91,7 @@ on August 2017.
     1. Polymer CLI
     1. Web component tester
     1. Polymer.json
-1. Webapp development tools
+1. Webapp development tools (package managers and linters)
     1. Gulp
         1. Gulpfile
         1. Tasks
@@ -101,29 +101,29 @@ on August 2017.
         1. bower.json specification
     1. NPM
         1. package.json specification
-1. ESLint
-1. Lighthouse
-1. Pagespeed
+    1. ESLint
+    1. Lighthouse
+    1. Pagespeed
 1. App architecture
-1. App shell
-1. App layout
-1. app-header-layout
-1. app-header
-1. app-drawer-layout
-1. app-drawer
-1. app-toolbar
-1. app-grid
-1. Routing
-1. app-route
-1. app-location
-1. iron-pages
-1. i18n
-1. app-localize-behavior
-1. PRPL
-1. Push
-1. Render
-1. Precache
-1. Lazy load
+    1. App shell
+    1. App layout
+        1. app-header-layout
+        1. app-header
+        1. app-drawer-layout
+        1. app-drawer
+        1. app-toolbar
+        1. app-grid
+    1. Routing
+        1. app-route
+        1. app-location
+        1. iron-pages
+    1. i18n
+        1. app-localize-behavior
+    1. PRPL
+        1. Push
+        1. Render
+        1. Precache
+        1. Lazy load
 1. Accessibility
 1. Focus and tabs
 1. Semantic markup
@@ -212,7 +212,9 @@ on August 2017.
 1. Storage triggers
 1. HTTP triggers
 1. pub/sub triggers
-1. App example
+1. Final project
+    1. Trip advisor clone
+    1. Instagram clone
 
 # Slides
 
