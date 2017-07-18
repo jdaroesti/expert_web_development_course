@@ -58,7 +58,7 @@ The course took place on August 2017.
     1. ES6 Arrays
     1. Promises and asynchronous programming
     1. ES6 Modules
-1. Browser
+1. Browser mechanics
     1. Critical rendering path
         1. DOM
         1. CSSOM
@@ -66,6 +66,7 @@ The course took place on August 2017.
         1. Layout
         1. Composite
         1. Paint
+    1. Engines (webkit, gecko, blink, spartan)
     1. Web APIs
 1. Web components
     1. HTML imports
@@ -95,7 +96,7 @@ The course took place on August 2017.
     1. Polymer CLI
     1. Web component tester
     1. Polymer.json
-1. Webapp development tools (package managers and linters)
+1. Development tools (package managers and linters)
     1. Gulp
         1. Gulpfile
         1. Tasks

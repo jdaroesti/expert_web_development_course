@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      function Foo(name) {
+        this.name = name;
+      }
+
+      Foo.prototype.myName = function() {
+        return this.name;
+      }; 
+
+      var a = newFoo("a");
+      var b = newFoo("b");
+
+      a.myName(); // "a"
+      b.myName(); // "b"
+    </script>
+
+  </head>
+</html>

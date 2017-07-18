@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      function Foo(name) {
+        this.name = name;
+      }
+
+      Foo.prototype.myName = function() {
+        return this.name;
+      };
+
+      function Bar(name,label) {
+        Foo.call( this, name ); // super?
+        this.label = label;
+      }
+
+      // here, we make a new `Bar.prototype`
+      // linked to `Foo.prototype`
+      // Bar.prototype = Object.create( Foo.prototype ); //ES5
+      Object.setPrototypeOf(Bar.prototype, Foo.prototype);
+
+      Bar.prototype.myLabel = function() {
+        return this.label;
+      };
+
+      var a = new Bar( "a", "obj a" );
+      a.myName(); // "a"
+      a.myLabel(); // "obj a"
+    </script>
+
+  </head>
+</html>

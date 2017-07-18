@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+      // A prototype object gets linked when calling new. This object points
+      // to the Foo.prototype
+
+      function Foo() {
+        // ...
+      }
+
+      var a = new Foo();
+
+      Object.getPrototypeOf(a) === Foo.prototype; // true
+    </script>
+
+    <script>
+      'use strict';
+      // Another property called constructor gets linked.
+
+      function Foo() {
+        // ...
+      }
+
+      Foo.prototype.constructor === Foo; // true
+
+      var a = new Foo();
+      a.constructor === Foo; // true
+    </script>
+
+  </head>
+</html>
