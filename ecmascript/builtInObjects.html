@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+      // not an object. string literal, primitive object, immutable. 
+      // coerced to String when calling methods
+      var strPrimitive = "I am a string";
+
+      typeof strPrimitive; // "string"
+      strPrimitive instanceof String; // false
+
+      var strObject = new String( "I am a string" );
+      typeof strObject; // "object"
+      strObject instanceof String; // true
+      // inspect the object sub-type
+      Object.prototype.toString.call(strObject); // [object String]
+    </script>
+  </head>
+</html>

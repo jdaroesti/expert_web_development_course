@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+      // Objects
+      var myObject = { };
+      myObject[true] = "foo";
+      myObject[3] = "bar";
+      myObject[myObject] = "baz";
+
+      myObject["true"]; // "foo"
+      myObject["3"]; // "bar"
+      myObject["[object Object]"]; // "baz"
+    </script>
+
+    <script>
+      'use strict';
+      // Arrays
+      var myArray = [ "foo", 42, "bar" ];
+
+      myArray["3"] = "baz";
+
+      myArray.length; // 4
+      myArray[3]; // "baz"
+    </script>
+  </head>
+</html>

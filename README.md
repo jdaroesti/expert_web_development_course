@@ -1,7 +1,10 @@
 # Expert web development course
 
-A course I gave for advanced web developers in Mexico City. The course took place
-on August 2017.
+A course I gave for advanced web developers in Mexico City. The course has a
+focus on development with the web components standard and understanding and using  
+the browser as a development platform. #useThePlatform
+
+The course took place on August 2017.
 
 # Syllabus
 
@@ -11,11 +14,11 @@ on August 2017.
         1. Operators
         1. Variables
         1. Comments
+        1. Comparisons. Falsy and Truthy statements.
         1. Control statements
              1. Conditionals
              1. Loops
              1. Switch
-             1. Falsy and Truthy statements
         1. Strict mode
         1. Functions
         1. this identifier
@@ -33,11 +36,12 @@ on August 2017.
         1. Binding exceptions
         1. Lexical this
         1. ES Objects
-        1. ES classes and mixins
+            1. Property descriptors
+            1. Getters and setters
         1. Prototypes
         1. Prototypical inheritance
         1. Behavior delegation
-    1. Block bindings
+    1. ES6 Block bindings
     1. Strings and regular expressions
     1. ES6 functions
         1. Default parameters
@@ -231,7 +235,7 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Mozilla Developer Network. https://developer.mozilla.org
 * MVCSS. http://mvcss.io/
 * Polymer Project. https://www.polymer-project.org
-* Simpson, Kyle. You don’t know JS. O’Reilly Media. 2015.
+* Simpson, Kyle. You don’t know JS series. O’Reilly Media. 2015.
 * Sturm, Gerwin. https://codingwithgerwin.blogspot.mx/2017/03/polymer-in-production.html
 * Web APIs list. https://developer.mozilla.org/en-US/docs/Web/API
 * https://www.webcomponents.org/
