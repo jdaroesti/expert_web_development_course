@@ -226,6 +226,7 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 
 # Literature
 
+* Archibald, Jake. https://jakearchibald.com/2017/es-modules-in-browsers/
 * Biedelman, Eric. What is shadow DOM?.
 * https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
 * https://developers.google.com/web/fundamentals/performance/rail
