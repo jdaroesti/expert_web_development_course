@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      (function es5Inheritance() {
+        'use strict';
+
+        function Rectangle(length, width) {
+          this.length = length;
+          this.width = width;
+        }
+
+        Rectangle.prototype.area = function() {
+          return this.length * this.width;
+        };
+
+        function Square(length) {
+          Rectangle.call(this, length, length);
+        }
+
+        Square.prototype = Object.create(Rectangle.prototype, {
+          constructor: {
+            value: Square,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }
+        });
+
+        var square = new Square(3);
+        console.log(square.area());
+      })();
+    </script>
+
+    <script>
+      (function es6Inheritance() {
+        'use strict';
+
+        class Rectangle {
+
+          constructor(length, width) {
+            this.length = length;
+            this.width = width;
+          }
+
+          area() {
+            return this.length * this.width;
+          }
+        }
+
+        class Square extends Rectangle {
+
+          constructor(length) {
+            super(length, length);
+          }
+        }
+
+        let square = new Square(3);
+        console.log(square.area());
+      })();
+    </script>
+  </head>
+</html>

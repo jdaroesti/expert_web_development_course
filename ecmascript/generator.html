@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      (function generatorDemo() {
+        'use strict';
+
+        function *createIterator() {
+          yield 1;
+          yield 2;
+          yield 3;
+        }
+
+        const iter = createIterator();
+
+        console.log(iter.next());
+        console.log(iter.next());
+        console.log(iter.next());
+        console.log(iter.next());
+      })();
+    </script>
+
+    <script>
+      (function generatorDemo2() {
+        'use strict';
+
+        const createIterator = function *(items) {
+          for(let i = 0; i < items.length; i++) {
+            yield items[i];
+          }
+        };
+
+        const iter = createIterator([1, 2, 3]);
+
+        console.log(iter.next());
+        console.log(iter.next());
+        console.log(iter.next());
+        console.log(iter.next());
+      })();
+    </script>
+
+    <script>
+      (function generatorDemo3() {
+        'use strict';
+
+        function *createIterator() {
+          yield 1;
+          return;
+          yield 2;
+          yield 3;
+        }
+
+        const iter = createIterator();
+
+        console.log(iter.next());
+        console.log(iter.next());
+        console.log(iter.next());
+      })();
+    </script>
+  </head>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      (function es5Class() {
+        'use strict';
+
+        function Person(name) {
+          this.name = name;
+        }
+
+        Person.prototype.sayName = function() {
+          console.log(this.name);
+        }
+
+        var person = new Person('Dave');
+        person.sayName();
+      })();
+    </script>
+
+    <script>
+      (function es6Class() {
+        'use strict';
+
+        class Person {
+
+          constructor(name) {
+            this.name = name;
+          }
+
+          sayName() {
+            console.log(this.name);
+          }
+        }
+
+        const person = new Person('Diego');
+        person.sayName();
+      })();
+    </script>
+
+    <script>
+      (function es6ClassInnerWorkings() {
+
+        let Person = (function() {
+          'use strict';
+
+          const Person = function(name) {
+            // Make sure function was called with new
+            if(typeof new.target === 'undefined') {
+              throw new Error('Constructor must be called with new');
+            }
+
+            this.name = name;
+          };
+
+          Object.defineProperty(Person.prototype, 'sayName', {
+            value: function() {
+              // Make sure the method was not called with new
+              if(typeof new.target !== 'undefined') {
+                throw new Error('Method cannot be called with new');
+              }
+
+              console.log(this.name);
+            },
+            enumerable: false,
+            writable: true,
+            configurable: true,
+          });
+
+          return Person;
+        })();
+
+        const person = new Person('Tom');
+        person.sayName();
+      })();
+    </script>
+
+    <script>
+      (function es6Singleton() {
+        'use strict';
+
+        let person = new class {
+          constructor(name) {
+            this.name = name;
+          }
+
+          sayName() {
+            console.log(this.name);
+          }
+        }('Bill');
+
+        person.sayName();
+      })();
+    </script>
+
+    <script>
+      (function es6StaticFactoryMethod() {
+        'use strict';
+
+        class Person {
+
+          constructor(name) {
+            this.name = name;
+          }
+
+          static create(name) {
+            return new Person(name);
+          }
+
+          sayName() {
+            console.log(this.name);
+          }
+        }
+
+        const person = Person.create('Mike');
+        person.sayName();
+
+      })();
+    </script>
+  </head>
+</html>
