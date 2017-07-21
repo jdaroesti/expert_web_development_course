@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      //ES5
+      function makeRequest(url, timeout, callback) {
+        timeout = timeout || 2000;
+        callback = callback || function() {};
+                 // the rest of the function
+      }
+
+      // What happens if timeout is falsy, like 0?
+    </script>
+
+    <script>
+      'use strict';
+      // ES5 alternative
+      function makeRequest(url, timeout, callback) {
+        timeout = (typeof timeout !== "undefined") ? timeout : 2000;
+        callback = (typeof callback !== "undefined") ? callback : function() {};
+                 // the rest of the function
+      }
+    </script>
+
+    <script>
+      'use strict';
+      // ES6
+      function makeRequest(url, timeout = 2000, callback = function() {}) {
+        // the rest of the function
+      }
+
+      makeRequest();
+      makeRequest('https://polymer-project.org');
+      makeRequest('https://polymer-project.org', 4000, function callback(body) {
+        // do something.
+      });
+      makeRequest('https://polymer-project.org', null);
+    </script>
+
+    <script>
+      'use strict';
+      // ES6
+
+      function makeRequest(paramA, paramB) {
+        console.log(paramA === arguments[0]);
+        console.log(paramB === arguments[1]);
+      }
+    </script>
+
+    <script>
+      'use strict';
+      // ES6... arguments object
+
+      function makeRequest(paramA, paramB = 5) {
+        console.log(paramA === arguments[0]);
+        console.log(paramB === arguments[1]); // false
+      }
+
+      makeRequest('A');
+    </script>
+
+    <script>
+      'use strict';
+      // ES6 default parameters expressions
+      let value = 5;
+
+      function getValue() {
+        return value++;
+      }
+
+      function add(first, second = getValue()) {
+        return first + second;
+      }
+
+      console.log(add(1, 1));
+      console.log(add(1));
+      console.log(add(1));
+      // 2 // 6 // 7
+
+    </script>
+
+  </head>
+</html>

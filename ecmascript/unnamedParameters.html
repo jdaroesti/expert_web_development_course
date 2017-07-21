@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      function restParameterDemo(first, ...allOthers) {
+        // something
+      }
+
+      let first = 'foo';
+      let others = ['bar', 'baz'];
+
+      restParameterDemo(first, ...others); // spread operator
+      // similar to python's rest_parameter(first, *others)
+    </script>
+
+  </head>
+</html>

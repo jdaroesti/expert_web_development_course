@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      'use strict';
+
+      function myIterator(iterable) {
+        let i = 0;
+
+        return {
+          next() {
+            let done = i >= iterable.length;
+            let value = !done ? iterable[i++] : undefined;
+            
+            return {done, value};
+          }
+        };
+      }
+
+      const iter = myIterator([1, 2, 3]);
+      console.log(iter.next());
+      console.log(iter.next());
+      console.log(iter.next());
+      console.log(iter.next());
+
+      console.log(iter.next());
+    </script>
+
+  </head>
+</html>
