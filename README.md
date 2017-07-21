@@ -1,8 +1,7 @@
 # Expert web development course
 
 A course I gave for advanced web developers in Mexico City. The course has a
-focus on development with the web components standard and understanding and using  
-the browser as a development platform. #useThePlatform
+focus on development with the web components standard, and understanding the browser as a modern development platform in par with iOS and Android. #useThePlatform
 
 The course took place on August 2017.
 
