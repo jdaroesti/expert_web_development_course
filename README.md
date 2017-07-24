@@ -236,10 +236,12 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Brubeck, Matt. https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
 * Crockford, Douglas. The javascript trilogy. https://www.youtube.com/playlist?list=PL5586336C26BDB324
 * CSS reflow demo. https://www.youtube.com/watch?v=ZTnIxIA5KGw
+* CSS triggers. https://csstriggers.com/
 * https://developers.google.com/web/fundamentals/performance/rail
 * https://developers.google.com/web/progressive-web-apps/
 * https://developers.google.com/web/tools/
 * ES6 Language Specification. http://www.ecma-international.org/ecma-262/6.0/
+* Garsiel, Tali. How browsers work internally? https://vimeo.com/44182484
 * Irish, Paul. https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
 * Kosaka, Mariko. https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4
 * Mozilla Developer Network. https://developer.mozilla.org

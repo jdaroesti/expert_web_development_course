@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="myDiv"></div>
+    <div id="myOtherDiv"></div>
+
+    <script>
+      (function(document) {
+        'use strict';
+
+        const div = document.querySelector('#myDiv');
+        const div2 = document.querySelector('#myOtherDiv');
+
+        const divHeight = div.clientWidth / 1.7;
+        div.style.height = `${divHeight}px`;
+
+        const div2Height = div2.clientWidth / 1.7;
+        div2.style.height = `${div2Height}px`;
+
+      })(document);
+    </script>
+  </body>
+</html>
