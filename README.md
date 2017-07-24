@@ -231,8 +231,11 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 
 # Literature
 
-* Archibald, Jake. https://jakearchibald.com/2017/es-modules-in-browsers/
+* Archibald, Jake. ES modules in browsers. https://jakearchibald.com/2017/es-modules-in-browsers/
+* Archibald, Jake. The offline cookbook. https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/
+* Archibald, Jake. The service worker lifecyle. https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/lifecycle
 * Biedelman, Eric. What is shadow DOM?. https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
+* Biedelman, Eric. Custom elements v1. https://developers.google.com/web/fundamentals/getting-started/primers/customelements
 * Brubeck, Matt. https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
 * Crockford, Douglas. The javascript trilogy. https://www.youtube.com/playlist?list=PL5586336C26BDB324
 * CSS reflow demo. https://www.youtube.com/watch?v=ZTnIxIA5KGw
@@ -240,20 +243,31 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * https://developers.google.com/web/fundamentals/performance/rail
 * https://developers.google.com/web/progressive-web-apps/
 * https://developers.google.com/web/tools/
+* Dodson, Rob. Introduction to focus. https://developers.google.com/web/fundamentals/accessibility/focus/
 * ES6 Language Specification. http://www.ecma-international.org/ecma-262/6.0/
 * Garsiel, Tali. How browsers work internally? https://vimeo.com/44182484
+* Gaunt, Matt. Service workers: an introduction. https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
+* Gaunt, Matt. The webapp manifest. https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+* Grigorik, Ilya. Introduction to HTTP/2. https://developers.google.com/web/fundamentals/performance/http2/
 * Irish, Paul. https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
+* Kearney, Meggin. Introduction to ARIA. https://developers.google.com/web/fundamentals/accessibility/semantics-aria/
+* Kearney, Meggin. Introduction to semantics. https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/
+* Kearney, Meggin. The accessibility tree. https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree
+* Kitamura, Eiji. https://www.webcomponents.org/community/articles/introduction-to-html-imports
 * Kosaka, Mariko. https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4
+* Medley, Joseph. Web push notificaitons: timely, relevant, precise. https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/
 * Mozilla Developer Network. https://developer.mozilla.org
 * MVCSS. http://mvcss.io/
+* Osamani, Addy. The PRPL pattern. https://developers.google.com/web/fundamentals/performance/prpl-pattern/
+* Osamani, Addy. The app shell model. https://developers.google.com/web/fundamentals/architecture/app-shell
 * Page, Wilson. http://wilsonpage.co.uk/preventing-layout-thrashing/
+* Posnick, Jake. Service worker registration. https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/registration
 * Polymer Project. https://www.polymer-project.org
 * Seddon, Ryan. So how do the browser actually renders a website? https://www.youtube.com/watch?v=SmE4OwHztCc
 * Simpson, Kyle. You don’t know JS series. O’Reilly Media. 2015.
 * Sturm, Gerwin. https://codingwithgerwin.blogspot.mx/2017/03/polymer-in-production.html
 * Web APIs list. https://developer.mozilla.org/en-US/docs/Web/API
 * https://www.webcomponents.org/
-* https://www.webcomponents.org/community/articles/introduction-to-html-imports
 * https://www.webcomponents.org/polyfills/
 * Wiltzius, Tom. https://www.html5rocks.com/en/tutorials/speed/layers/
 * Zachas, Nicholas. Understanding ECMAscript 6. No starch press. 2016.
