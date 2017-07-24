@@ -58,15 +58,20 @@ The course took place on August 2017.
     1. Promises and asynchronous programming
     1. ES6 Modules
 1. Browser mechanics
+    1. Engines (webkit, gecko, blink, spartan) / (nitro, spiderMonkey, v8, chakra)
     1. Critical rendering path
         1. DOM
         1. CSSOM
         1. Render tree
         1. Layout
-        1. Composite
         1. Paint
-    1. Engines (webkit, gecko, blink, spartan)
-    1. Web APIs
+        1. Composite
+    1. Platform
+        1. DOM manipulation
+        2. Events
+        3. Networking
+        4. Web APIs
+    1. OS bindings
 1. Web components
     1. HTML imports
     1. Template tag
@@ -227,20 +232,26 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 # Literature
 
 * Archibald, Jake. https://jakearchibald.com/2017/es-modules-in-browsers/
-* Biedelman, Eric. What is shadow DOM?.
-* https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
+* Biedelman, Eric. What is shadow DOM?. https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
+* Brubeck, Matt. https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
+* Crockford, Douglas. The javascript trilogy. https://www.youtube.com/playlist?list=PL5586336C26BDB324
+* CSS reflow demo. https://www.youtube.com/watch?v=ZTnIxIA5KGw
 * https://developers.google.com/web/fundamentals/performance/rail
 * https://developers.google.com/web/progressive-web-apps/
 * https://developers.google.com/web/tools/
 * ES6 Language Specification. http://www.ecma-international.org/ecma-262/6.0/
+* Irish, Paul. https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
 * Kosaka, Mariko. https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4
 * Mozilla Developer Network. https://developer.mozilla.org
 * MVCSS. http://mvcss.io/
+* Page, Wilson. http://wilsonpage.co.uk/preventing-layout-thrashing/
 * Polymer Project. https://www.polymer-project.org
+* Seddon, Ryan. So how do the browser actually renders a website? https://www.youtube.com/watch?v=SmE4OwHztCc
 * Simpson, Kyle. You don’t know JS series. O’Reilly Media. 2015.
 * Sturm, Gerwin. https://codingwithgerwin.blogspot.mx/2017/03/polymer-in-production.html
 * Web APIs list. https://developer.mozilla.org/en-US/docs/Web/API
 * https://www.webcomponents.org/
 * https://www.webcomponents.org/community/articles/introduction-to-html-imports
 * https://www.webcomponents.org/polyfills/
+* Wiltzius, Tom. https://www.html5rocks.com/en/tutorials/speed/layers/
 * Zachas, Nicholas. Understanding ECMAscript 6. No starch press. 2016.
