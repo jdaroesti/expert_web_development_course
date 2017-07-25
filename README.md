@@ -255,7 +255,10 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Kearney, Meggin. Introduction to ARIA. https://developers.google.com/web/fundamentals/accessibility/semantics-aria/
 * Kearney, Meggin. Introduction to semantics. https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/
 * Kearney, Meggin. The accessibility tree. https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree
-* Kitamura, Eiji. https://www.webcomponents.org/community/articles/introduction-to-html-imports
+* Kitamura, Eiji. Introduction to HTML imports. https://www.webcomponents.org/community/articles/introduction-to-html-imports
+* Kitamura, Eiji. Introduction to the template element. https://www.webcomponents.org/community/articles/introduction-to-template-element
+* Kitamura, Eiji. Introduction to Shadow DOM. https://www.webcomponents.org/community/articles/introduction-to-shadow-dom
+* Kitamura, Eiji. Introduction to Custom Elements. https://www.webcomponents.org/community/articles/introduction-to-custom-elements
 * Kosaka, Mariko. https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4
 * Medley, Joseph. Web push notificaitons: timely, relevant, precise. https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/
 * Mozilla Developer Network. https://developer.mozilla.org
