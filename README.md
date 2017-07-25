@@ -73,8 +73,16 @@ The course took place on August 2017.
         4. Web APIs
     1. OS bindings
 1. Web components
-    1. HTML imports
     1. Template tag
+        1. Previous client side templating techniques
+        1. How to use an HTML template?
+    1. Shadow DOM
+        1. What is shadow DOM?
+        1. Composition and slots
+        1. Styling
+        1. Manipulating slots with JS
+        1. Event model
+        1. Handling focus
     1. Custom elements
         1. Defining a new element
         1. Extending other elements
@@ -83,13 +91,10 @@ The course took place on August 2017.
         1. Element upgrades
         1. Styling
         1. Unknown elements vs. undefined elements
-    1. Shadow DOM
-        1. What is shadow DOM?
-        1. Composition and slots
-        1. Styling
-        1. Manipulating slots with JS
-        1. Event model
-        1. Handling focus
+    1. HTML imports
+        1. Basics
+        1. Execution order
+        1. Dependency management (de duping)
     1. Webcomponents.js
     1. Browser support
 1. Polymer
@@ -114,6 +119,7 @@ The course took place on August 2017.
     1. Lighthouse
     1. Pagespeed
 1. App architecture
+    1. Feature detection (Modernizr)
     1. App shell
     1. App layout
         1. app-header-layout

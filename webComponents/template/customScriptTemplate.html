@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Custom script template</title>
+  </head>
+  <body>
+    <script id="template" type="text/template">
+      <h1>Don Gato</h1>
+      <img src="http://vignette2.wikia.nocookie.net/doblaje/images/a/a3/308360-topcat_large.png/revision/latest?cb=20130716205723&path-prefix=es">
+    </script>
+
+    <script>
+      (function customScriptTemplate() {
+        'use script';
+
+        const templ = document.querySelector('#template');
+        document.body.innerHTML = templ.innerText;
+      })();
+    </script>
+  </body>
+</html>
