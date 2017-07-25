@@ -236,6 +236,8 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Archibald, Jake. The service worker lifecyle. https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/lifecycle
 * Biedelman, Eric. What is shadow DOM?. https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
 * Biedelman, Eric. Custom elements v1. https://developers.google.com/web/fundamentals/getting-started/primers/customelements
+* Biedelman, Eric. HTML imports. https://www.html5rocks.com/en/tutorials/webcomponents/imports/
+* Biedelman, Eric. Html's new template tag. https://www.html5rocks.com/en/tutorials/webcomponents/template/
 * Brubeck, Matt. https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
 * Crockford, Douglas. The javascript trilogy. https://www.youtube.com/playlist?list=PL5586336C26BDB324
 * CSS reflow demo. https://www.youtube.com/watch?v=ZTnIxIA5KGw

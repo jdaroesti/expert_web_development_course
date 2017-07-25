@@ -1,0 +1,27 @@
+<!-- Some styles -->
+<style>
+  h1 {
+    color: green;
+  }
+</style>
+
+<!-- A template -->
+<template>
+  <h1>Tom</h1>
+</template>
+
+<!-- Some script -->
+<script>
+  (function module(window) {
+    'use strict';
+
+    window.PI = 3.14159;
+    console.log('hello, world!');
+
+    // Import's reference to import document
+    console.log(document.currentScript.ownerDocument);
+
+    // Import's reference to main document
+    console.log(document);
+  })(window);
+</script>

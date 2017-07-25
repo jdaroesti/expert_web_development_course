@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML imports</title>
+    <link rel="import" href="import.html">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <script>
+      (function main(PI) {
+        // Dangerous, should be better handled on import's onLoad event. But oh well!
+        const imp = document.querySelector('link[rel="import"]').import;
+        const templ = imp.querySelector('template');
+
+        document.body.appendChild(document.importNode(templ.content, true));
+
+        console.log(PI);
+      })(window.PI);
+    </script>
+  </body>
+</html>
