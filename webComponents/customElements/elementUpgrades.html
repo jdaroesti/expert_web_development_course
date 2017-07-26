@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Element upgrades</title>
+  </head>
+  <body>
+    <upgradable-element></upgradable-element>
+
+    <script>
+      (function elementUpgrades(customElements) {
+        'use strict';
+
+        class UpgradableElement extends HTMLElement { }
+
+        customElements.whenDefined('upgradable-element')
+          .then(() => console.log('the element is defined'));
+
+        setTimeout(() => {
+          customElements.define('upgradable-element', UpgradableElement);
+        }, 1000);
+
+      })(window.customElements);
+    </script>
+  </body>
+</html>

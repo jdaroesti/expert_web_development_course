@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Custom Elements Reactions</title>
+  </head>
+  <body>
+    <element-reactions-demo></element-reactions-demo>
+
+    <script>
+      (function customElementsReactions(customElements) {
+        'use strict';
+
+        class ElementReactionsDemo extends HTMLElement {
+
+          static get observedAttributes() {
+            return ['name'];
+          }
+
+          constructor() {
+            super();
+            console.log('super called');
+          }
+
+          connectedCallback() {
+            console.log('connectedCallback called');
+          }
+
+          disconnectedCallback() {
+            console.log('disconnectedCallback called');
+          }
+
+          attributeChangedCallback(attrName, oldVal, newVal) {
+            console.log(`attributeChangedCallback called. attrName: ${attrName}; oldVal: ${oldVal}; newVal: ${newVal}`);
+          }
+        }
+
+        customElements.define('element-reactions-demo', ElementReactionsDemo);
+      })(window.customElements)
+    </script>
+  </body>
+</html>

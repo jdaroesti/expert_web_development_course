@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Extending elements</title>
+  </head>
+  <body>
+
+    <loud-button>Loud Button</loud-button>
+    <extra-loud-button>Extra Loud Button</extra-loud-button>
+
+    <script>
+      (function extendingElements(customElements) {
+        'use strict';
+
+        class LoudButton extends HTMLElement {
+          constructor() {
+            super();
+
+            const shadowRoot = this.attachShadow({mode: 'open'});
+            shadowRoot.innerHTML = `
+              <button id="myButton">
+                <slot></slot>
+              </button>
+            `;
+          }
+
+          connectedCallback() {
+            this.shadowRoot.querySelector('#myButton')
+              .addEventListener('click', this._saySomethingLoud.bind(this));
+          }
+
+          _saySomethingLoud() {
+            console.log('HELLLO!');
+          }
+        }
+
+        class ExtraLoudButton extends LoudButton {
+          _saySomethingLoud() {
+            console.log('HELLLLLLOOO!!!!!!!!!!!!!!!!!!!!');
+          }
+        }
+
+        customElements.define('loud-button', LoudButton);
+        customElements.define('extra-loud-button', ExtraLoudButton);
+      })(window.customElements);
+    </script>
+  </body>
+</html>

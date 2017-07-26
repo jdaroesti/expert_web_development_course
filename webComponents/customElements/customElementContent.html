@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Custom element content</title>
+  </head>
+  <body>
+    <custom-element-content></custom-element-content>
+
+    <template id="myTemplate">
+      <h1>I come from a template</h1>
+    </template>
+
+    <script>
+      (function customElementContent(customElements) {
+        'use strict';
+
+        class CustomElementContent extends HTMLElement {
+          constructor() {
+            super();
+
+            const shadowRoot = this.attachShadow({mode: 'open'});
+            const templ = document.querySelector('#myTemplate');
+            shadowRoot.appendChild(document.importNode(templ.content, true));
+          }
+        }
+
+        customElements.define('custom-element-content', CustomElementContent);
+      })(window.customElements);
+    </script>
+  </body>
+</html>

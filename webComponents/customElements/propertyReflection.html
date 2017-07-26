@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Property Reflection</title>
+  </head>
+  <body>
+    <property-reflector my-attribute="some val"></property-reflector>
+
+    <script>
+      (function propertyReflection(customElements) {
+        'use strict';
+
+        class PropertyReflector extends HTMLElement {
+
+          get myAttribute() {
+            return this.getAttribute('my-attribute');
+          }
+
+          set myAttribute(val) {
+            if(val) {
+              this.setAttribute('my-attribute', val);
+            } else {
+              this.removeAttribute('my-attribute');
+            }
+          }
+        }
+
+        customElements.define('property-reflector', PropertyReflector);
+      })(window.customElements);
+    </script>
+  </body>
+</html>

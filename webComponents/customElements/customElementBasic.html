@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Custom element basic example</title>
+  </head>
+  <body>
+
+    <basic-element></basic-element>
+
+    <script>
+      (function customElementBasic(customElements) {
+        'use strict';
+
+        class BasicElement extends HTMLElement {
+          constructor() {
+            super();
+            console.log('I have been created');
+
+            const shadowRoot = this.attachShadow({mode: 'open'});
+            shadowRoot.innerHTML = `
+              <p>I'm a basic element</p>
+            `;
+          }
+        }
+
+        customElements.define('basic-element', BasicElement);
+      })(window.customElements);
+    </script>
+    <script>
+      (function customElementCreation(customElements) {
+        'use strict';
+
+        const BasicElement = customElements.get('basic-element');
+        const basicElement = new BasicElement();
+        const otherBasicElement = document.createElement('basic-element');
+
+        document.body.append(basicElement);
+        document.body.append(otherBasicElement);
+      })(window.customElements)
+    </script>
+  </body>
+</html>
