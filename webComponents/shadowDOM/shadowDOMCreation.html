@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shadow DOM creation</title>
+  </head>
+  <body>
+    <script>
+      (function shadowDOMCreation(document) {
+        'use strict';
+
+        const header = document.createElement('header');
+        const shadowRoot = header.attachShadow({mode: 'open'});
+
+        shadowRoot.innerHTML = `
+          <h1>Hello Shadow Root</h1>
+          <p>Hello students</p>
+        `;
+
+        document.body.appendChild(header);
+      })(document);
+    </script>
+  </body>
+</html>

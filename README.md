@@ -256,6 +256,7 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Garsiel, Tali. How browsers work internally? https://vimeo.com/44182484
 * Gaunt, Matt. Service workers: an introduction. https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
 * Gaunt, Matt. The webapp manifest. https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+* Glazkov, Dimitri. What the heck is shadow DOM? https://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/
 * Grigorik, Ilya. Introduction to HTTP/2. https://developers.google.com/web/fundamentals/performance/http2/
 * Irish, Paul. https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
 * Kearney, Meggin. Introduction to ARIA. https://developers.google.com/web/fundamentals/accessibility/semantics-aria/
@@ -280,5 +281,6 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Web APIs list. https://developer.mozilla.org/en-US/docs/Web/API
 * https://www.webcomponents.org/
 * https://www.webcomponents.org/polyfills/
+* Walto, Philip. Web components and the future of modular CSS. https://philipwalton.github.io/talks/2015-10-26/
 * Wiltzius, Tom. https://www.html5rocks.com/en/tutorials/speed/layers/
 * Zachas, Nicholas. Understanding ECMAscript 6. No starch press. 2016.

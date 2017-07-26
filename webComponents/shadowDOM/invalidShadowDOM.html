@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Invalid Shadow DOM</title>
+  </head>
+  <body>
+    <script>
+      (function invalidShadoDOM(document) {
+        'use strict';
+
+        document.createElement('input').attachShadow({mode: 'open'});
+      })(document);
+    </script>
+  </body>
+</html>

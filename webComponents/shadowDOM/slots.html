@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slots example</title>
+  </head>
+  <body>
+
+    <my-slotted-element>
+      <p>I'm inside the default slot</p>
+      <p slot="named">I'm inside a named slot</p>
+    </my-slotted-element>
+
+    <script>
+      (function slots(document, customElements) {
+        'use strict';
+
+        class MySlottedElement extends HTMLElement {
+          constructor() {
+            super();
+            const shadowRoot = this.attachShadow({mode: 'open'});
+            shadowRoot.innerHTML = `
+              <style>
+                .default-slot {
+                  color: red;
+                }
+
+                .named-slot {
+                  color: olive;
+                  font-weight: bold;
+                }
+              </style>
+              <h1>I'm my slotted element</h1>
+              <div class="default-slot">
+                <slot></slot> <!-- Default slot -->
+              </div>
+              <div class="named-slot">
+                <slot name="named"></slot>
+              </div>
+            `;
+          }
+        }
+
+        customElements.define('my-slotted-element', MySlottedElement);
+      })(document, window.customElements);
+    </script>
+  </body>
+</html>

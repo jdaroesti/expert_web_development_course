@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Custom styles shadow DOM</title>
+
+    <style>
+      .custom {
+        --paragraph-color: green;
+      }
+    </style>
+  </head>
+  <body>
+
+    <my-custom-styles-element class="custom"></my-custom-styles-element>
+    <script>
+      (function customStylesShadowDOM(customelements) {
+        'use strict';
+
+        class MyCustomStylesElement extends HTMLElement {
+          constructor() {
+            super();
+
+            const shadowRoot = this.attachShadow({mode: 'open'});
+            shadowRoot.innerHTML = `
+              <style>
+                .custom {
+                  color: var(--paragraph-color, red);
+                }
+              </style>
+              <p class="custom">I can be styled with custom CSS properties!!!!</p>
+            `;
+          }
+
+          connectedCallback() {
+            console.log(this.shadowRoot);
+          }
+        }
+
+        customElements.define('my-custom-styles-element', MyCustomStylesElement);
+      })(window.customElements);
+    </script>
+  </body>
+</html>
