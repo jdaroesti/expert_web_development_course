@@ -1,0 +1,56 @@
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+
+<dom-module id="academia-clock">
+  <template>
+    <style>
+      .time {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+
+    <p>The epoch time is: <span>[[time]]</span></p>
+    <p>UTC time is: <span>[[utcTime]]</span></p>
+
+    <label for="timeInput">Write an epoch time: </label>
+    <input id="timeInput" type="number" on-keydown="_onNewEpochTime">
+  </template>
+
+  <script>
+    (function academiaClockPolymerDefinition(customElements) {
+      'use strict';
+
+      class AcademiaClock extends Polymer.Element {
+        static get is() { return 'academia-clock'; }
+
+        static get properties() {
+          return {
+            time: {
+              type: Number,
+              observer: '_updateUTCTime'
+            },
+            utcTime: {
+              type: Number
+            }
+          };
+        }
+
+        _calculateUTCTime(epochTime) {
+          return new Date(Number(epochTime));
+        }
+
+        _onNewEpochTime(event) {
+          const {value: newTime} = event.target;
+          this.time = newTime;
+          this._updateUTCTime(newTime);
+        }
+
+        _updateUTCTime(newTime) {
+          this.utcTime = this._calculateUTCTime(newTime);
+        }
+      }
+
+      customElements.define(AcademiaClock.is, AcademiaClock);
+    })(window.customElements);
+  </script>
+</dom-module>
