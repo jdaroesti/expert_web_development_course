@@ -1,0 +1,78 @@
+<template>
+  <style>
+    .time {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+
+  <p>The epoch time is: <span id="epochTime" class="time"></span></p>
+  <p>UTC time is: <span id="utcTime" class="time"></span></p>
+  <label for="timeInput">Write an epoch time: </label>
+  <input id="timeInput" type="number" >
+</template>
+
+<script>
+  (function academiaClockCustomElementDefinition(customElements, document) {
+    'use strict';
+
+    class AcademiaClock extends HTMLElement {
+
+      constructor() {
+        super();
+
+        const shadowRoot = this.attachShadow({mode: 'open'});
+        const templ = document.currentScript.ownerDocument.querySelector('template');
+        shadowRoot.appendChild(document.importNode(templ.content, true));
+      }
+
+      static get observedAttributes() {
+        return ['time'];
+      }
+
+      connectedCallback() {
+        this._epochTime = this.shadowRoot.querySelector('#epochTime');
+        this._utcTime = this.shadowRoot.querySelector('#utcTime');
+
+        this.shadowRoot.querySelector('#timeInput').addEventListener('keyup', this._updateTime.bind(this));
+
+        this._renderTime(this.time);
+      }
+
+      attributeChangedCallback(attrName, oldVal, newVal) {
+        if(oldVal === newVal) {
+          return;
+        }
+        this[attrName] = newVal;
+      }
+
+      get time() {
+        return this.getAttribute('time');
+      }
+
+      set time(value) {
+        if(value) {
+          this.setAttribute('time', value);
+          this._renderTime(this.time);
+        } else {
+          this.removeAttribute('time');
+        }
+      }
+
+      _calculateUTCTime(epochTime) {
+        return new Date(Number(epochTime));
+      }
+
+      _renderTime(epochTime) {
+        this._epochTime.innerText = epochTime || 0;
+        this._utcTime.innerText = this._calculateUTCTime(this._epochTime.innerText);
+      }
+
+      _updateTime(event) {
+        this._renderTime(event.target.value);
+      }
+    }
+
+    customElements.define('academia-clock', AcademiaClock);
+  })(window.customElements, document);
+</script>

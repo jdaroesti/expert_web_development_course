@@ -98,6 +98,10 @@ The course took place on August 2017.
     1. Webcomponents.js
     1. Browser support
 1. Polymer
+    1. Under the hoods
+        1. Polymer 2.0
+        1. Mixins, Elements and utils
+        1. UI and application elements
     1. Custom elements
     1. Shadow DOM and styling
     1. Events
@@ -252,6 +256,7 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * https://developers.google.com/web/progressive-web-apps/
 * https://developers.google.com/web/tools/
 * Dodson, Rob. Introduction to focus. https://developers.google.com/web/fundamentals/accessibility/focus/
+* Dodson, Rob. Polymer 2.0 Under the hoods. https://www.youtube.com/watch?v=9vYJ8K6A_Kc
 * ES6 Language Specification. http://www.ecma-international.org/ecma-262/6.0/
 * Garsiel, Tali. How browsers work internally? https://vimeo.com/44182484
 * Gaunt, Matt. Service workers: an introduction. https://developers.google.com/web/fundamentals/getting-started/primers/service-workers

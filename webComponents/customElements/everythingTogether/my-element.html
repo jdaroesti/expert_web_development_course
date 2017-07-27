@@ -1,0 +1,78 @@
+
+<template id="myElementTemplate">
+  <style>
+    button {
+      background-color: purple;
+      color: white;
+    }
+  </style>
+  <button>My element button</button>
+</template>
+
+<script>
+  (function myElement(customElements, document) {
+    'use strict';
+
+    class MyElement extends HTMLElement {
+
+      static get observedAttributes() {
+        // pain point 1 (attribute / property sync)
+        return ['selected'];
+      }
+
+      constructor() {
+        super();
+        this.selected = true;
+
+        // pain point 3 (set / update shadow dom)
+        const shadowRoot = this.attachShadow({mode: 'open'});
+        const templ = document.currentScript.ownerDocument.querySelector('template');
+        shadowRoot.appendChild(document.importNode(templ.content, true));
+      }
+
+      connectedCallback() {
+
+        // Pain point 2 (data in data out)
+        this.addEventListener('click', this._onClick.bind(this));
+      }
+
+      attributeChangedCallback(name, oldVal, newVal) {
+        // Pain point 1 (attribute / property sync)
+        if(name === 'selected') {
+          this.selected = newVal;
+        }
+
+        // If we don't care about the attr can do
+        // this[name] = newVal;
+      }
+
+      get selected() {
+        return this.getAttribute('selected');
+      }
+
+      set selected(val) {
+        if(this.selected === val) {
+          return;
+        }
+        this.setAttribute('selected', val);
+      }
+
+      _onClick(event) {
+        // pain point 2 (data in data out)
+        console.log('I was clicked!!!');
+        this.dispatchEvent(new CustomEvent('my-element-clicked', {
+          bubbles: true,
+          composed: true,
+          detail: {
+            clicked: true
+          }
+        }));
+
+        // pain point 3 (set / update shadow dom)
+        this.shadowRoot.querySelector('button').innerText = 'other text';
+      }
+    }
+
+    customElements.define('my-element', MyElement);
+  })(window.customElements, document)
+</script>
