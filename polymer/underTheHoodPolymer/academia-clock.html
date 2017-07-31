@@ -4,13 +4,13 @@
   <template>
     <style>
       .time {
-        color: red;
-        font-weight: bold;
+        color: var(--time-color, red);
+        font-weight: var(--time-font-weight, bold);
       }
     </style>
 
-    <p>The epoch time is: <span>[[time]]</span></p>
-    <p>UTC time is: <span>[[utcTime]]</span></p>
+    <p>The epoch time is: <span class="time">[[time]]</span></p>
+    <p>UTC time is: <span class="time">[[utcTime]]</span></p>
 
     <label for="timeInput">Write an epoch time: </label>
     <input id="timeInput" type="number" on-keydown="_onNewEpochTime">
@@ -21,6 +21,7 @@
       'use strict';
 
       class AcademiaClock extends Polymer.Element {
+        
         static get is() { return 'academia-clock'; }
 
         static get properties() {

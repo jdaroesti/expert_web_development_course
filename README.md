@@ -103,12 +103,35 @@ The course took place on August 2017.
         1. Mixins, Elements and utils
         1. UI and application elements
     1. Custom elements
+        1. Custom elements concepts
+        1. Define an element
+        1. Declare properties
     1. Shadow DOM and styling
+        1. Shadow DOM concepts
+        1. DOM templating
+        1. Style shadow DOM
+        1. Custom CSS properties
     1. Events
+        1. Handle and fire events
+        1. Gesture events
     1. Data system
+        1. Data system concepts
+        1. Work with object and array data
+        1. Observers and computed properties
+        1. Data binding
+        1. Helper elements
     1. Polymer CLI
+        1. Installation
+        1. Commands
     1. Web component tester
+        1. Mocha
+        1. Chai
+        1. Test fixture
     1. Polymer.json
+        1. Entrypoint
+        1. Shell
+        1. Fragments
+        1. Other configurations
 1. Development tools (package managers and linters)
     1. Gulp
         1. Gulpfile
