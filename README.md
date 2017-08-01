@@ -284,6 +284,7 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Garsiel, Tali. How browsers work internally? https://vimeo.com/44182484
 * Gaunt, Matt. Service workers: an introduction. https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
 * Gaunt, Matt. The webapp manifest. https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+* Ginsberg, Wendy. Building Progressive Web Apps with Polymer. https://www.youtube.com/watch?v=fKsVXO3AztY
 * Glazkov, Dimitri. What the heck is shadow DOM? https://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/
 * Grigorik, Ilya. Introduction to HTTP/2. https://developers.google.com/web/fundamentals/performance/http2/
 * Irish, Paul. https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
@@ -295,20 +296,27 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Kitamura, Eiji. Introduction to Shadow DOM. https://www.webcomponents.org/community/articles/introduction-to-shadow-dom
 * Kitamura, Eiji. Introduction to Custom Elements. https://www.webcomponents.org/community/articles/introduction-to-custom-elements
 * Kosaka, Mariko. https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4
+* Maynard, Travis. Getting started with Gulp. Packt publishing. 2015.
 * Medley, Joseph. Web push notificaitons: timely, relevant, precise. https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/
+* Moore, John. Getting organized with NPM and Bower. https://www.packtpub.com/books/content/getting-organized-npm-and-bower
 * Mozilla Developer Network. https://developer.mozilla.org
 * MVCSS. http://mvcss.io/
+* Norton, Gray. Data flow in Polymer Elements and Apps. https://www.youtube.com/watch?v=pAW4YDLtPVs&t=1390s
 * Osamani, Addy. The PRPL pattern. https://developers.google.com/web/fundamentals/performance/prpl-pattern/
 * Osamani, Addy. The app shell model. https://developers.google.com/web/fundamentals/architecture/app-shell
 * Page, Wilson. http://wilsonpage.co.uk/preventing-layout-thrashing/
+* Pontelin, Teemu. State of Web Components and Polymer 2.0. https://www.youtube.com/watch?v=aZyt5K0HYVg
 * Posnick, Jake. Service worker registration. https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/registration
 * Polymer Project. https://www.polymer-project.org
+* Polymer Project. https://github.com/Polymer/polymer
+* Russel, Alex. Progressive Web Apps. https://www.youtube.com/watch?v=x7cfLDFVyHo
 * Seddon, Ryan. So how do the browser actually renders a website? https://www.youtube.com/watch?v=SmE4OwHztCc
 * Simpson, Kyle. You don’t know JS series. O’Reilly Media. 2015.
 * Sturm, Gerwin. https://codingwithgerwin.blogspot.mx/2017/03/polymer-in-production.html
 * Web APIs list. https://developer.mozilla.org/en-US/docs/Web/API
-* https://www.webcomponents.org/
-* https://www.webcomponents.org/polyfills/
+* Web components catalog. https://www.webcomponents.org/
+* Webcomponents polyfills. https://www.webcomponents.org/polyfills/
+* webcomponents.js polyfills. https://github.com/webcomponents/webcomponentsjs
 * Walto, Philip. Web components and the future of modular CSS. https://philipwalton.github.io/talks/2015-10-26/
 * Wiltzius, Tom. https://www.html5rocks.com/en/tutorials/speed/layers/
 * Zachas, Nicholas. Understanding ECMAscript 6. No starch press. 2016.

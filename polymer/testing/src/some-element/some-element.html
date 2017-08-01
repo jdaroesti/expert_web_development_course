@@ -1,0 +1,28 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="some-element">
+  <template>
+    <h1 id="headerTitle">[[title]]</h1>
+  </template>
+
+  <script>
+    (function someElementDefinition(customElements) {
+      'use strict';
+
+      class SomeElement extends Polymer.Element {
+        static get is() { return 'some-element'; }
+
+        static get properties() {
+          return {
+            title: {
+              type: String,
+              value: 'Hello, world!'
+            }
+          };
+        }
+      }
+
+      customElements.define(SomeElement.is, SomeElement)
+    })(window.customElements);
+  </script>
+</dom-module>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Some element test</title>
+
+    <script src="../../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../../src/some-element/some-element.html">
+  </head>
+  <body>
+    <test-fixture id="someElementFixture">
+      <template>
+        <some-element title="Billy"></some-element>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('some-element test', function() {
+        let element;
+
+        setup(function() {
+          element = fixture('someElementFixture');
+        });
+
+        test('default title is hello world', function() {
+          assert.equal(element.$.headerTitle.innerHTML, 'Billy');
+        });
+
+
+      });
+    </script>
+  </body>
+</html>
