@@ -12,6 +12,16 @@
 
         class PropertyReflector extends HTMLElement {
 
+          static get observedAttributes() {
+            return ['myAttribute'];
+          }
+
+          attributeChangedCallback(attrName, oldVal, newVal) {
+            if(attrName === 'myAttribute') {
+              this.myAttribute = newVal;
+            }
+          }
+
           get myAttribute() {
             return this.getAttribute('my-attribute');
           }
@@ -19,6 +29,13 @@
           set myAttribute(val) {
             if(val) {
               this.setAttribute('my-attribute', val);
+              this.dispatchEvent(new CustomEvent('my-attribute-changed', {
+                bubbles: true,
+                composed: true,
+                detail: {
+                  value: val
+                }
+              }))
             } else {
               this.removeAttribute('my-attribute');
             }
