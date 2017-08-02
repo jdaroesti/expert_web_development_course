@@ -3,7 +3,21 @@
 
 <dom-module id="my-custom-element">
   <template>
-    <my-other-custom-element title="{{name}}" on-title-changed="_changeTitle"></my-other-custom-element>
+    <style>
+      .title {
+        color: var(--my-custom-element-title-color, red);
+      }
+
+      .other {
+        --other-title-mixin: {
+          color: purple;
+          font-size: 4rem;
+          font-weight: 200;
+        }
+      }
+    </style>
+    <h1 class="title">Hello I'm custom title</h1>
+    <my-other-custom-element class="other" title="{{name}}" on-title-changed="_changeTitle"></my-other-custom-element>
   </template>
   <script>
     (function myCustomElementDefinition(customElements) {

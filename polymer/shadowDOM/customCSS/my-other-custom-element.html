@@ -2,7 +2,12 @@
 
 <dom-module id="my-other-custom-element">
   <template>
-    <h1 on-click="_changeTitle">[[title]]</h1>
+    <style>
+      .other-title {
+        @apply --other-title-mixin;
+      }
+    </style>
+    <h1 class="other-title" on-click="_changeTitle">[[title]]</h1>
   </template>
   <script>
     (function myOtherCustomElementDeclaration(customElements) {
