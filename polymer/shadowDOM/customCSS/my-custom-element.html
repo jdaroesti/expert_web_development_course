@@ -1,0 +1,32 @@
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+<link rel="import" href="my-other-custom-element.html">
+
+<dom-module id="my-custom-element">
+  <template>
+    <my-other-custom-element title="{{name}}" on-title-changed="_changeTitle"></my-other-custom-element>
+  </template>
+  <script>
+    (function myCustomElementDefinition(customElements) {
+      'use strict';
+
+      class MyCustomElement extends Polymer.Element {
+        static get is() { return 'my-custom-element'; }
+
+        static get properties() {
+          return {
+            name: {
+              type: String,
+              value: 'Thomas'
+            }
+          }
+        }
+
+        _changeTitle(e) {
+          console.log(e.detail.value);
+        }
+      }
+
+      customElements.define(MyCustomElement.is, MyCustomElement);
+    })(window.customElements)
+  </script>
+</dom-module>
