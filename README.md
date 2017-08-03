@@ -280,10 +280,12 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * https://developers.google.com/web/tools/
 * Dodson, Rob. Introduction to focus. https://developers.google.com/web/fundamentals/accessibility/focus/
 * Dodson, Rob. Polymer 2.0 Under the hoods. https://www.youtube.com/watch?v=9vYJ8K6A_Kc
+* Dutton, Sam. Progressive Web Apps Course. https://www.youtube.com/playlist?list=PLNYkxOF6rcIAdnzEsWkg0KpMn2WJwMBmN
 * ES6 Language Specification. http://www.ecma-international.org/ecma-262/6.0/
 * Garsiel, Tali. How browsers work internally? https://vimeo.com/44182484
 * Gaunt, Matt. Service workers: an introduction. https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
 * Gaunt, Matt. The webapp manifest. https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+* Gaunt, Matt. Intro to Gulp. https://www.youtube.com/watch?v=N42LQ2dLoA8
 * Ginsberg, Wendy. Building Progressive Web Apps with Polymer. https://www.youtube.com/watch?v=fKsVXO3AztY
 * Glazkov, Dimitri. What the heck is shadow DOM? https://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/
 * Grigorik, Ilya. Introduction to HTTP/2. https://developers.google.com/web/fundamentals/performance/http2/
@@ -304,11 +306,13 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Norton, Gray. Data flow in Polymer Elements and Apps. https://www.youtube.com/watch?v=pAW4YDLtPVs&t=1390s
 * Osamani, Addy. The PRPL pattern. https://developers.google.com/web/fundamentals/performance/prpl-pattern/
 * Osamani, Addy. The app shell model. https://developers.google.com/web/fundamentals/architecture/app-shell
+* Osamani, Addy. Instant Loading with the App Shell Model. https://www.youtube.com/watch?v=QhUzmR8eZAo
 * Page, Wilson. http://wilsonpage.co.uk/preventing-layout-thrashing/
 * Pontelin, Teemu. State of Web Components and Polymer 2.0. https://www.youtube.com/watch?v=aZyt5K0HYVg
 * Posnick, Jake. Service worker registration. https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/registration
 * Polymer Project. https://www.polymer-project.org
 * Polymer Project. https://github.com/Polymer/polymer
+* Polymer Project. The PRPL pattern. https://www.polymer-project.org/2.0/toolbox/prpl
 * Russel, Alex. Progressive Web Apps. https://www.youtube.com/watch?v=x7cfLDFVyHo
 * Seddon, Ryan. So how do the browser actually renders a website? https://www.youtube.com/watch?v=SmE4OwHztCc
 * Simpson, Kyle. You don’t know JS series. O’Reilly Media. 2015.

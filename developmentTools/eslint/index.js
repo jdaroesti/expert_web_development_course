@@ -6,9 +6,9 @@
    *
    * @return {String} A greeting
    */
-  function main() {
+  const main = () => {
     return 'hello';
-  }
+  };
 
   main();
 })();
