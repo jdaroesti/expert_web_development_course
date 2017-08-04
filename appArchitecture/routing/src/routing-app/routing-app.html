@@ -1,0 +1,60 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+
+<link rel="import" href="../view-a/view-a.html">
+<link rel="import" href="../view-b/view-b.html">
+
+<dom-module id="routing-app">
+  <template>
+    <style>
+      app-toolbar {
+        background-color: red;
+      }
+    </style>
+
+    <app-location route="{{route}}"></app-location>
+    <app-route route="{{route}}" pattern="/:view" data="{{routeData}}"></app-route>
+
+    <app-drawer-layout fullbleed>
+      <app-drawer slot="drawer">
+        <app-toolbar></app-toolbar>
+        <ul>
+          <li><a href="/view-a">view A</a></li>
+          <li><a href="/view-b">view B</a></li>
+        </ul>
+      </app-drawer>
+
+      <app-header-layout>
+        <app-header slot="header">
+          <app-toolbar>Routing app </app-toolbar>
+        </app-header>
+
+        <iron-pages selected="[[routeData.view]]" attr-for-selected="view" fallback-selection="view-a">
+          <view-a view="view-a"></view-a>
+          <view-b view="view-b"></view-b>
+        </iron-pages>
+      </app-header-layout>
+    </app-drawer-layout>
+  </template>
+  <script>
+    (function routingAppDefinition(customElements) {
+      'use strict';
+
+      class RoutingApp extends Polymer.Element {
+        static get is() { return 'routing-app'; }
+      }
+
+      customElements.define(RoutingApp.is, RoutingApp);
+    })(window.customElements);
+  </script>
+</dom-module>

@@ -1,0 +1,19 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="view-a">
+  <template>
+    <h1>Soy view A</h1>
+  </template>
+
+  <script>
+    (function viewADefinition(customElements) {
+      'use strict';
+
+      class ViewA extends Polymer.Element {
+        static get is() { return 'view-a'; }
+      }
+
+      customElements.define(ViewA.is, ViewA);
+    })(window.customElements)
+  </script>
+</dom-module>
