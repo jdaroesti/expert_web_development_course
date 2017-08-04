@@ -272,6 +272,8 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Biedelman, Eric. HTML imports. https://www.html5rocks.com/en/tutorials/webcomponents/imports/
 * Biedelman, Eric. Html's new template tag. https://www.html5rocks.com/en/tutorials/webcomponents/template/
 * Brubeck, Matt. https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
+* Burns, Peter. Encapsulated routing with elements. https://www.polymer-project.org/blog/routing
+* Burns, Peter. Modular routing. https://www.youtube.com/watch?v=FbJQ4ghag_M
 * Crockford, Douglas. The javascript trilogy. https://www.youtube.com/playlist?list=PL5586336C26BDB324
 * CSS reflow demo. https://www.youtube.com/watch?v=ZTnIxIA5KGw
 * CSS triggers. https://csstriggers.com/
@@ -313,6 +315,8 @@ https://docs.google.com/presentation/d/1wgIUHwkA42C1rImZmUWdXoIZptkrP3yrnQssHA70
 * Polymer Project. https://www.polymer-project.org
 * Polymer Project. https://github.com/Polymer/polymer
 * Polymer Project. The PRPL pattern. https://www.polymer-project.org/2.0/toolbox/prpl
+* Polymer Project. Routing. https://www.polymer-project.org/2.0/toolbox/routing
+* Polymer Project. Layout. https://www.polymer-project.org/2.0/toolbox/app-layout
 * Russel, Alex. Progressive Web Apps. https://www.youtube.com/watch?v=x7cfLDFVyHo
 * Seddon, Ryan. So how do the browser actually renders a website? https://www.youtube.com/watch?v=SmE4OwHztCc
 * Simpson, Kyle. You don’t know JS series. O’Reilly Media. 2015.

@@ -1,0 +1,18 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="layout-content">
+  <template>
+    <h1>We have a layout</h1>
+  </template>
+  <script>
+    (function layoutContentDefinition(customElements) {
+      'use script';
+
+      class LayoutContent extends Polymer.Element {
+        static get is() { return 'layout-content' }
+      }
+
+      customElements.define(LayoutContent.is, LayoutContent);
+    })(window.customElements)
+  </script>
+</dom-module>
