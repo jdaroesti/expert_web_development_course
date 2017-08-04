@@ -1,0 +1,70 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+
+<link rel="import" href="../../bower_components/lazy-imports/lazy-imports-mixin.html">
+
+<dom-module id="routing-app-lazy">
+  <link rel="lazy-import" group="view-a" href="../view-a/view-a.html">
+  <link rel="lazy-import" group="view-b" href="../view-b/view-b.html">
+  <template>
+    <style>
+      app-toolbar {
+        background-color: red;
+      }
+    </style>
+
+    <app-location route="{{route}}"></app-location>
+    <app-route route="{{route}}" pattern="/:view" data="{{routeData}}"></app-route>
+
+    <app-drawer-layout fullbleed>
+      <app-drawer slot="drawer">
+        <app-toolbar></app-toolbar>
+        <ul>
+          <li><a href="/view-a" on-click="_lazyImport" data-group="view-a">view A</a></li>
+          <li><a href="/view-b" on-click="_lazyImport" data-group="view-b">view B</a></li>
+        </ul>
+      </app-drawer>
+
+      <app-header-layout>
+        <app-header slot="header">
+          <app-toolbar>Routing app Lazy</app-toolbar>
+        </app-header>
+
+        <iron-pages selected="[[routeData.view]]" attr-for-selected="view" fallback-selection="view-a">
+          <view-a view="view-a"></view-a>
+          <view-b view="view-b"></view-b>
+        </iron-pages>
+      </app-header-layout>
+    </app-drawer-layout>
+  </template>
+  <script>
+    (function routingAppLazyDefinition(customElements) {
+      'use strict';
+
+      class RoutingAppLazy extends Polymer.LazyImportsMixin(Polymer.Element) {
+        static get is() { return 'routing-app-lazy'; }
+
+        connectedCallback() {
+          super.connectedCallback();
+          this.importLazyGroup(this.routeData.view || 'view-a');
+        }
+
+        _lazyImport(event) {
+          this.importLazyGroup(event.target.getAttribute('data-group'));
+        }
+      }
+
+      customElements.define(RoutingAppLazy.is, RoutingAppLazy);
+    })(window.customElements);
+  </script>
+</dom-module>
