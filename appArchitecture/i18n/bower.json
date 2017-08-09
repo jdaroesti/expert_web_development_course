@@ -1,0 +1,8 @@
+{
+  "name": "i18n-app",
+  "private": true,
+  "dependencies": {
+    "polymer": "^2.0.2",
+    "app-localize-behavior": "PolymerElements/app-localize-behavior#^2.0.0"
+  }
+}

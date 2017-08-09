@@ -16,6 +16,7 @@
 <dom-module id="routing-app-lazy">
   <link rel="lazy-import" group="view-a" href="../view-a/view-a.html">
   <link rel="lazy-import" group="view-b" href="../view-b/view-b.html">
+
   <template>
     <style>
       app-toolbar {
@@ -40,7 +41,7 @@
           <app-toolbar>Routing app Lazy</app-toolbar>
         </app-header>
 
-        <iron-pages selected="[[routeData.view]]" attr-for-selected="view" fallback-selection="view-a">
+        <iron-pages selected="[[routeData.view]]" attr-for-selected="view" fallback-selection="[[rootView]]">
           <view-a view="view-a"></view-a>
           <view-b view="view-b"></view-b>
         </iron-pages>
@@ -54,9 +55,18 @@
       class RoutingAppLazy extends Polymer.LazyImportsMixin(Polymer.Element) {
         static get is() { return 'routing-app-lazy'; }
 
+        static get properties() {
+          return {
+            rootView: {
+              type: String,
+              value: 'view-a'
+            }
+          };
+        }
+
         connectedCallback() {
           super.connectedCallback();
-          this.importLazyGroup(this.routeData.view || 'view-a');
+          this.importLazyGroup(this.routeData.view || this.rootView);
         }
 
         _lazyImport(event) {

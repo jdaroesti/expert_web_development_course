@@ -1,0 +1,6 @@
+{
+  "en": {
+    "hello": "Hello, my name is {name}.",
+    "goodbye": "See you later!"
+  }
+}

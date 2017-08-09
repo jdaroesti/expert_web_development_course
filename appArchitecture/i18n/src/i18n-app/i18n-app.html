@@ -1,0 +1,48 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/app-localize-behavior/app-localize-behavior.html">
+
+<link rel="import" href="../other-element/other-element.html">
+
+<dom-module id="i18n-app">
+  <template>
+    <h1>soy i18n-app</h1>
+    <p>[[localize('hello', 'name', 'Billy')]]</p>
+    <p>[[localize('goodbye')]]</p>
+
+    <other-element></other-element>
+  </template>
+
+  <script>
+    (function i18nAppDefinition(customElements) {
+      'use strict';
+
+      class I18nApp extends
+        Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior], Polymer.Element) {
+
+        static get is() { return 'i18n-app'; }
+
+        static get properties() {
+          return {
+            language: {
+              type: String,
+              value: 'en'
+            }
+          };
+        }
+
+        connectedCallback() {
+          super.connectedCallback();
+
+          this.addEventListener('app-localize-resources-loaded', (e) => {
+            console.log(this.localize('hello', 'name', 'Timmy'));
+            console.log(this.resources)
+          });
+
+          this.loadResources(this.resolveUrl(`/locales/${this.language}.json`));
+        }
+      }
+
+      customElements.define(I18nApp.is, I18nApp);
+    })(window.customElements);
+  </script>
+</dom-module>

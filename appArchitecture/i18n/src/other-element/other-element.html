@@ -1,0 +1,38 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="other-element">
+  <template>
+    <h1>[[localize('goodbye')]]</h1>
+  </template>
+  <script>
+    (function otherElementDefinition(customElements) {
+      'use strict';
+
+      class OtherElement
+        extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior], Polymer.Element) {
+
+        static get is() { return 'other-element'; }
+
+        static get properties() {
+          return {
+            language: {
+              type: String,
+              value: 'en'
+            }
+          };
+        }
+
+        connectedCallback() {
+          this.addEventListener('app-localize-resources-loaded', (e) => {
+            console.log(this.localize('hello', 'name', 'tomm'));
+            console.log(this.resources)
+          });
+
+          this.loadResources(this.resolveUrl(`/locales/${this.language}.json`));
+        }
+      }
+
+      customElements.define(OtherElement.is, OtherElement);
+    })(window.customElements)
+  </script>
+</dom-module>

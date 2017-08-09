@@ -1,0 +1,6 @@
+{
+  "es": {
+    "hello": "Hola, me llamo {name}.",
+    "goodbye": "¡Hasta la vista!"
+  }
+}
